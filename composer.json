@@ -1,0 +1,11 @@
+{
+    "name": "sborislav/api",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "sborislav\\api\\": "lib/"
+        }
+    }
+}
