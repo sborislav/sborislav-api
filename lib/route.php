@@ -2,7 +2,7 @@
 
 namespace sborislav\api;
 
-class Route
+class route
 {
     private $array = array();
     public $cache = false;
@@ -70,6 +70,9 @@ class Route
      */
     public function makeCache()
     {
+        if (!file_exists(__DIR__.'/../cache'))
+            mkdir(__DIR__.'/../cache');
+        
         $string = "<?php\n return ".var_export($this->array, true).';';
         if ( file_put_contents(__DIR__.'/../cache/config.php', $string) === false )
             return false;
