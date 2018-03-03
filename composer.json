@@ -2,7 +2,8 @@
     "name": "sborislav/api",
     "type": "library",
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "symfony/routing": "^4.0"
     },
     "autoload": {
         "psr-4": {
