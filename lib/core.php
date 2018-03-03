@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\Matcher\UrlMatcher;
 use Symfony\Component\Routing\RequestContext;
 
-use sborislav\api\Route as sRoute;
+use sborislav\api\route as sRoute;
 
 class core
 {
